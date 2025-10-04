@@ -38,16 +38,17 @@
     "hledger-flow-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1758898801,
-        "narHash": "sha256-LIlFElcEyJ4No6TfLF3Vy5c8DQCZXKb49xBFmi9/bVA=",
+        "lastModified": 1757232841,
+        "narHash": "sha256-uwgnxm13JThOYK46gIi2CHshIkjpIWNIuRW65xv5w28=",
         "owner": "apauley",
         "repo": "hledger-flow",
-        "rev": "eece3e7e7fa2e61b9711eeac80f03bf72ea524c1",
+        "rev": "67f1776b69e312576e761e6a292688939462612f",
         "type": "github"
       },
       "original": {
         "owner": "apauley",
         "repo": "hledger-flow",
+        "rev": "67f1776b69e312576e761e6a292688939462612f",
         "type": "github"
       }
     },

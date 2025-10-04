@@ -12,7 +12,11 @@
       flake = false;
     };
     hledger-flow-src = {
-      url = "github:apauley/hledger-flow";
+      url = "github:apauley/hledger-flow/67f1776b69e312576e761e6a292688939462612f";
+
+      # The issue doesn't occur when using the parent of ^
+      # url = "github:apauley/hledger-flow/c9217e2a1ae44f8258e884d3e56782826363bae0";
+
       flake = false;
     };
   };
