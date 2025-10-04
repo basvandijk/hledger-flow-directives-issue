@@ -3,8 +3,12 @@ A minimal reproducible case for: https://github.com/apauley/hledger-flow/issues/
 It shows that [including manual transactions in `directives.journal`](https://github.com/basvandijk/hledger-flow-directives-issue/blob/master/directives.journal#L4-L10) causes them to be included in all generated journal files.
 
 This is because https://github.com/apauley/hledger-flow/commit/0bcf667b24b030e30acee350c05dd69ba5ec20b5 replaced
+
 `hledger import --dry-run --file directives.journal        file.csv --rules-file ...` with:
-`hledger print            --file directives.journal --file file.csv --rules-file ...` meaning that all transactions from `directives.journal` will be printed and thus included in generated journal files.
+
+`hledger print            --file directives.journal --file file.csv --rules-file ...` 
+
+meaning that all transactions from `directives.journal` will be printed and thus included in generated journal files.
 
 Indeed when I [downgrade](https://github.com/basvandijk/hledger-flow-directives-issue/blob/master/flake.nix#L17-L18) to the parent of https://github.com/apauley/hledger-flow/commit/0bcf667b24b030e30acee350c05dd69ba5ec20b5 the issue doesn't happen.
 
