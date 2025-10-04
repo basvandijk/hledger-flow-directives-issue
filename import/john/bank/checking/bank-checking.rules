@@ -1,0 +1,14 @@
+skip 1
+
+separator ;
+
+fields date, amount1, orig_amt, cur, exchange_rate, description,, category,
+
+date-format %Y-%m-%d
+
+account1 assets:john:bank:checking
+
+currency1 CHF
+
+if Lidl
+ account2 expenses:groceries

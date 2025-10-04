@@ -1,0 +1,10 @@
+account assets:john:bank:checking    ; type:C
+account expenses:groceries    ; type:X
+
+# After https://github.com/apauley/hledger-flow/commit/0bcf667b24b030e30acee350c05dd69ba5ec20b5
+# manual transactions included directly or indirectly in directives.journal (like the one below)
+# get included in all 3-journal files. See: import/john/bank/checking/3-journal/2025/2025-01-01_2025-01-31.journal
+
+2025-10-04 Manual transaction from directives.journal
+  assets:john:bank:checking  CHF -10
+  expenses:groceries

@@ -1,0 +1,8 @@
+2025-01-18 Lidl
+    assets:john:bank:checking      CHF -28.15
+    expenses:groceries              CHF 28.15
+
+2025-10-04 Manual transaction from directives.journal
+    assets:john:bank:checking         CHF -10
+    expenses:groceries                 CHF 10
+
